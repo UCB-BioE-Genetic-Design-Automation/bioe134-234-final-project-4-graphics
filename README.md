@@ -3,107 +3,48 @@
 
 ## Project Overview
 
-This project provides two core bioinformatics utilities: 
+This project provides a graphics program to allow users to generate diagrams of their choosing: 
 
-1. **Reverse Complement (revcomp)**: Calculates the reverse complement of a DNA sequence.
-2. **Translate**: Translates a DNA sequence into a protein sequence according to the standard genetic code.
+It includes:
+1. **Methods**: Class-bound functions to help the LLM generate the diagram
+2. **C9 Wrappers**: Allows the LLM to understand the methods and use them efficiently
+3. **PyTests**: Tests to allow the user to see if their instructions are working correctly with the LLM
 
-These functions are implemented in **Python** and are part of the broader bioinformatics toolset aimed at automating genetic sequence analysis tasks.
+This program is implemented in **Python**.
 
 ---
 
 ## Scope of Work
 
-As part of the final project for BioE 134, I developed two functions that are foundational for sequence analysis:
+As part of the final project for BioE 134, I was responsible for the following parts of creating a program that can output biological graphics images:
 
-1. **Reverse Complement**: This function returns the reverse complement of a DNA sequence, which is an essential task in many genetic analysis pipelines.
+1. **Methods for Drawing and Storing Graphics Objects**: I worked with one of my group members, Hari, to create class-bound methods to initiate and draw shapes on a canvas. The main class is called "Canvas", where all the shapes are stored and drawn in specific orderings.
    
-2. **Translate**: This function translates a DNA sequence into a corresponding protein sequence by converting each codon into its corresponding amino acid, based on the standard genetic code.
-
-Both functions include input validation and error handling to ensure proper use. The reverse complement function raises an error for sequences containing invalid characters, while the translate function raises an error for sequences not divisible by three, as well as sequences containing invalid characters.
+2. **C9 Wrappers**: I was responsible for creating and refining the C9 Wrappers for all the existing methods in the project.
 
 ---
 
 ## Function Descriptions
 
-### 1. Reverse Complement (`reverse_complement`)
+### 1. Shape Classes (`Rectangle, Ellipse, TextBox, etc.`)
 
-- **Description**: This function takes a DNA sequence and returns its reverse complement. Only valid nucleotides (A, T, C, G) are allowed. The function raises a `ValueError` if invalid characters are found.
-- **Input**: A string representing the DNA sequence.
-- **Output**: A string representing the reverse complement of the input DNA sequence.
-
-**Example**:
-```python
-reverse_complement("ATGC")
-# Returns: "GCAT"
-```
-
-### 2. Translate (`translate`)
-
-- **Description**: This function translates a DNA sequence into a corresponding protein sequence. The input sequence must be divisible by 3. If it contains invalid characters or is not a multiple of three, the function raises a `ValueError`. Stop codons are represented as underscores (`_`).
-- **Input**: A string representing the DNA sequence.
-- **Output**: A string representing the translated protein sequence.
-
-**Example**:
-```python
-translate("ATGGCC")
-# Returns: "MA"
-```
-
----
-
-## Error Handling
-
-### Reverse Complement
-- Raises `ValueError` if invalid characters (anything other than A, T, C, G) are present in the DNA sequence.
-
-### Translate
-- Raises `ValueError` if the sequence contains invalid characters or if the sequence length is not a multiple of three.
-
----
+- **Shape Classes Description**: These classes all have "__init__" and "draw" methods. They take in various inputs such as ("start_coordinate", "end_coordinate", "color", etc.) to store as instance variables in the "Canvas" class, described below.
+- **Canvas Class Description**: The "Canvas" class stores all the shapes in a dictionary (to control the order they appear on the screen as well), and features a "draw", "add", and "remove" methods.
 
 ## Testing
 
-Both functions have been tested with standard, edge, and invalid input cases. A comprehensive suite of tests has been implemented using **pytest**.
+We tested the program with ChatGPT, with the C9 wrappers and methods. The tests are included in the repository.
 
-- **Test File**: `tests/test_bio_functions.py`
-
-The tests include:
-- Valid sequences
-- Sequences containing invalid characters
-- Sequences with lengths not divisible by three (for the translate function)
-- Palindromic sequences (for reverse complement)
-- Lowercase input handling
+The tests include a set of instructions, the desired generated image, and the actual image.
 
 ---
 
 ## Usage Instructions
 
-Clone the repository and install the required dependencies listed in `requirements.txt`. The functions can be imported from the `bio_functions.py` module.
-
-**Example**:
-
-```bash
-pip install -r requirements.txt
-```
-
-Once installed, you can use the functions as follows:
-
-```python
-from bio_functions import reverse_complement, translate
-
-# Example DNA sequence
-dna_sequence = "ATGC"
-
-# Reverse complement
-print(reverse_complement(dna_sequence))
-
-# Translate
-print(translate("ATGGCC"))
-```
+Create a set of instructions, pass those instructions into GPT, along with the methods and C9 wrappers, and ask it to run your instructions.
 
 ---
 
 ## Conclusion
 
-These two functions provide foundational operations for working with DNA sequences in bioinformatics pipelines. They have been tested and documented, ensuring proper error handling and robust functionality.
+This program allows for anyone to give a set of instructions to a LLM such as ChatGPT, along with our methods and C9 wrappers, in order to generate a diagram of their choosing.
