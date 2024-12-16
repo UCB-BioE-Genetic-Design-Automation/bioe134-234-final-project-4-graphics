@@ -1,0 +1,444 @@
+
+{
+    "org.c9.function.Textbox.__init__": {
+        "id": "org.c9.function.Textbox.__init__",
+        "name": "Textbox.__init__", 
+        "description": "initiates a textbox with parameters color, coordinates, and text", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "textbox", "text"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"text": "str", "color": "Tuple[int, int, int]", "coordinates": "Tuple[int, int]"}],
+        "outputs": "None",
+
+        "examples": [
+            {
+                "input": {"text": "this is the text", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[5, 6]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Textbox.draw": {
+            "id": "org.c9.function.Textbox.draw",
+            "name": "Textbox.draw", 
+            "description": "draws a textbox with parameters color, coordinates, and text", 
+            "type": "function", 
+            "keywords": ["draw", "shape", "coordinates", "textbox", "text"],
+            "date_created": "2024-11-21T00:00:00Z", 
+            "date_last_modified": "2024-11-21T00:00:00Z",
+            "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+            "outputs": "Image of textbox",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of textbox"}
+            }]
+        },
+
+
+    "org.c9.function.Rectangle.__init__": {
+        "id": "org.c9.function.Rectangle.__init__",
+        "name": "Rectangle.__init__", 
+        "description": "initiates a rectangle with parameters color, coordinates, width, and height", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "rectangle"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"width": "int", "height": "int", "color": "Tuple[int, int, int]", "coordinates": "Tuple[int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Rectangle.draw": {
+        "id": "org.c9.function.Rectangle.draw",
+        "name": "Rectangle.draw", 
+        "description": "draws a rectangle according to its parameters color, coordinates, and text", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "rectangle"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of rectangle",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+
+    "org.c9.function.Arrow.__init__": {
+        "id": "org.c9.function.Arrow.__init__",
+        "name": "Arrow.__init__", 
+        "description": "initiates an arrow with its color, start coordinate, and end coordinate", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "arrow"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"start_coordinates": "Tuple[int, int]", "end_coordinates": "Tuple[int, int]", "color": "Tuple[int, int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Arrow.draw": {
+        "id": "org.c9.function.Arrow.draw",
+        "name": "Arrow.draw", 
+        "description": "draws an arrow according to its color, start coordinates, and end coordinates", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "arrow"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of arrow",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+    
+
+    "org.c9.function.Polygon.__init__": {
+        "id": "org.c9.function.Polygon.__init__",
+        "name": "Polygon.__init__", 
+        "description": "initates a polygon with its coordinate information, color, width, and height", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "polygon"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"vertices": "list", "color": "Tuple[int, int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Polygon.draw": {
+            "id": "org.c9.function.Polygon.draw",
+            "name": "Polygon.draw", 
+            "description": "draws a polygon according to its coordinate information, color, width, and height", 
+            "type": "function", 
+            "keywords": ["draw", "shape", "coordinates", "polygon"], 
+            "date_created": "2024-11-21T00:00:00Z", 
+            "date_last_modified": "2024-11-21T00:00:00Z",
+            "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+            "outputs": "Image of polygon",
+        
+            "example": [
+                {
+                    "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                    "output": {"result": "None"}
+                }]
+            },
+
+    "org.c9.function.Ellipse.__init__": {
+        "id": "org.c9.function.Ellipse.__init__",
+        "name": "Ellipse.__init__", 
+        "description": "initates an ellipse according to its coordinate information, color, width, and height", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "ellipse"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"width": "int", "height": "int", "color": "Tuple[int, int, int]", "coordinates": "Tuple[int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2", "color": "Tuple[1, 2, 3]", "coordinates": "Tuple[4, 5]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Ellipse.draw": {
+        "id": "org.c9.function.Ellipse.draw",
+        "name": "Ellipse.draw", 
+        "description": "draws an ellipse according to its coordinate information, color, width, and height", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "ellipse"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of ellipse",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of ellipse"}
+            }]
+        },
+
+    "org.c9.function.CenteredText.__init__": {
+        "id": "org.c9.function.CenteredText.__init__",
+        "name": "CenteredText.__init__", 
+        "description": "centers the text in a textbox with parameters text, center, color, and font size", 
+        "type": "function", 
+        "keywords": ["initiate", "shape", "coordinates", "textbox", "text", "centered"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"text": "str", "center": "Tuple[int, int]", "color": "Tuple[int, int, int]", "font_size": "int"}],
+        "outputs": "None",
+
+        "examples": [
+            {
+                "input": {"text": "this is the text", "center": "Tuple[2, 3]", "color": "Tuple[1, 2, 3]", "font_size": "5"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.CenteredText.draw": {
+            "id": "org.c9.function.CenteredText.draw",
+            "name": "CenteredText.draw", 
+            "description": "draws a centered textbox according to parameters text, center, color, and font size", 
+            "type": "function", 
+            "keywords": ["draw", "shape", "coordinates", "textbox", "text", "centered"],
+            "date_created": "2024-11-21T00:00:00Z", 
+            "date_last_modified": "2024-11-21T00:00:00Z",
+            "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+            "outputs": "Image of textbox",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of textbox"}
+            }]
+        },
+
+    "org.c9.function.DashedLine.__init__": {
+        "id": "org.c9.function.DashedLine.__init__",
+        "name": "DashedLine.__init__", 
+        "description": "initiates a dashed line with its start coordinates, end coordinates, color, dash pattern, and thickness", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "dashed", "line"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"start_coordinates": "Tuple[int, int]", "end_coordinates": "Tuple[int, int]", "color": "Tuple[int, int, int]", "dash_pattern": "List[int]", "thickness": "int"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"start_coordinates": "Tuple[1, 2]", "end_coordinates": "Tuple[5, 6]", "color": "Tuple[1, 2, 3]", "dash_pattern": "List[3]", "thickness": "5"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.DashedLine.draw": {
+        "id": "org.c9.function.DashedLine.draw",
+        "name": "DashedLine.draw", 
+        "description": "draws a dashed line according to its coordinate information, color, width, and height", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "dashed", "line"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of dashed line",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of dashed line"}
+            }]
+        },
+
+    "org.c9.function.DegradationDots.__init__": {
+        "id": "org.c9.function.DegradationDots.__init__",
+        "name": "DegradationDots.__init__", 
+        "description": "initiates degradation dots with a list of coordinates, radius, and color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "degradation", "dots"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"coordinates_list": "List[Tuple[int, int]]", "radius": "int", "color": "Tuple[int, int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"coordinates_list": "List[Tuple[2, 3]]", "radius": "4", "color": "Tuple[1, 2, 3]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.DegradationDots.draw": {
+        "id": "org.c9.function.DegradationDots.draw",
+        "name": "DegradationDots.draw", 
+        "description": "draws degradation dots according to its list of coordinates, radius, and color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "degradation", "dots"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of degradation dots",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of degradation dots"}
+            }]
+        },
+
+    "org.c9.function.LabeledArrow.__init__": {
+        "id": "org.c9.function.LabeledArrow.__init__",
+        "name": "LabeledArrow.__init__", 
+        "description": "initiates a labeled arrow with a start coordinates, end coordinates, color, thickness, label, label offset, and label color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "labeled", "arrow"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"start_coordinates": "Tuple[int, int]", "end_coordinates": "Tuple[int, int]", "color": "Tuple[int, int, int]", "thickness": "int", "label": "str", "label_offset": "Tuple[int, int]", "label_color": "Tuple[int, int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"start_coordinates": "Tuple[1, 2]", "end_coordinates": "Tuple[6, 7]", "color": "Tuple[1, 2, 3]", "thickness": "3", "label": "arrow text", "label_offset": "Tuple[3, 2]", "label_color": "Tuple[1, 2, 3]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+
+    "org.c9.function.LabeledArrow.draw": {
+        "id": "org.c9.function.LabeledArrow.draw",
+        "name": "LabeledArrow.draw", 
+        "description": "draws a labeled arrow according to its start coordinates, end coordinates, color, thickness, label, label offset, and label color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "labeled", "arrow"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of labeled arrow",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of labeled arrow"}
+            }]
+        },
+
+    "org.c9.function.TextInOval.__init__": {
+        "id": "org.c9.function.TextInOval.__init__",
+        "name": "TextInOval.__init__", 
+        "description": "initiates a text in an oval with its text, width, height, coordinates, color, and text color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "text", "oval"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"text": "str", "width": "int", "height": "int", "coordinates": "Tuple[int, int]", "color": "Tuple[int, int, int]", "text_color": "Tuple[int, int, int]"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"text": "this is the text", "width": "2", "height": "2", "coordinates": "Tuple[4, 5]", "color": "Tuple[1, 2, 3]", "text_color": "Tuple[4, 5, 6]"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.TextInOval.draw": {
+        "id": "org.c9.function.TextInOval.draw",
+        "name": "TextInOval.draw", 
+        "description": "draws a text in an oval according to its text, width, height, coordinates, color, and text color", 
+        "type": "function", 
+        "keywords": ["draw", "shape", "coordinates", "text", "oval"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"draw_obj": "ImageDraw.Draw"}],
+        "outputs": "Image of text in oval",
+        
+        "example": [
+            {
+                "input": {"draw_obj": "ImageDraw.Draw"},
+                "output": {"result": "Image of text in oval"}
+            }]
+        },
+
+
+    
+
+
+    "org.c9.function.Canvas.__init__": {
+        "id": "org.c9.function.Canvas.__init__",
+        "name": "Canvas.__init__", 
+        "description": "initiates a canvas with a dictionary of shapes, and its width and height",
+        "type": "function", 
+        "keywords": ["initiate", "canvas", "coordinates", "shapes", "dictionary"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"width": "int", "height": "int"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"width": "2", "height": "2"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Canvas.add": {
+        "id": "org.c9.function.Canvas.add",
+        "name": "Canvas.add", 
+        "description": "adds a shape object to the canvas and its dictionary of shapes",
+        "type": "function", 
+        "keywords": ["canvas", "coordinates", "shape", "dictionary", "add"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"shape_id": "str", "shape": "Shape"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"shape_id": "rect", "shape": "rectangle"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Canvas.remove": {
+        "id": "org.c9.function.Canvas.remove",
+        "name": "Canvas.__init__", 
+        "description": "removes a shape object from the canvas and from its dictionary of shapes",
+        "type": "function", 
+        "keywords": ["canvas", "coordinates", "shape", "dictionary", "remove"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": [{"shape_id": "str"}],
+        "outputs": "None",
+        
+        "example": [
+            {
+                "input": {"shape_id": "rect"},
+                "output": {"result": "None"}
+            }]
+        },
+
+    "org.c9.function.Canvas.draw": {
+        "id": "org.c9.function.Canvas.draw",
+        "name": "Canvas.draw", 
+        "description": "draws the canvas in the order of its dictionary of shapes",
+        "type": "function", 
+        "keywords": ["draw", "canvas", "coordinates", "shape", "dictionary"], 
+        "date_created": "2024-11-21T00:00:00Z", 
+        "date_last_modified": "2024-11-21T00:00:00Z",
+        "inputs": "None",
+        "outputs": "Image of the canvas with all shapes drawn on it",
+        
+        "example": [
+            {
+                "input": {"input": "None"},
+                "output": {"result": "Image of canvas"}
+            }]
+        }
+
+    
+}
