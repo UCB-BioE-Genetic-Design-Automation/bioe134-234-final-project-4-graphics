@@ -1,6 +1,8 @@
+# BioE 134 Final Project README
+
 This document outlines the structure, functionality, and collaborative development process for the C9 Graphics Project, which is designed to generate and manipulate diagrams programmatically. The project consists of three key components: Library of Methods, C9 Wrappers, and PyTests, all implemented in Python. Each team member has contributed equally to their development and integration.
 
-**1. Library of Methods**
+## 1. Library of Methods
 The library provides a set of reusable, class-bound functions for generating and manipulating graphical elements such as rectangles, textboxes, arrows, polygons, and ellipses. These classes and methods simplify diagram creation through intuitive, parameterized functions.
 Key Features
 Inheritance Structure: Built around a superclass (Element) to promote modularity and maintainability.
@@ -15,7 +17,7 @@ rectangle.draw(draw_obj)
 
 These methods are critical for transforming abstract design specifications into tangible graphical outputs.
 
-**2. C9 Wrappers**
+## 2. C9 Wrappers
 The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integration with language models like GPT for automated diagram generation. This design facilitates high-level querying and instruction sets to programmatically interact with the library.
 Key Features
 Wrapper Functions: Abstract away the complexities of direct method calls, enabling intuitive usage via simple JSON commands.
@@ -37,7 +39,7 @@ Copy code
 
 These wrappers ensure that non-technical users can generate diagrams by interacting with the model through natural language.
 
-**3. PyTests**
+## 3. PyTests
 PyTests verify the correctness and robustness of the implemented methods and wrappers, ensuring consistent outputs and reliability of the system.
 Key Features
 Comprehensive Test Cases: Covers edge cases for all major functionalities, including invalid inputs and boundary conditions.
@@ -53,7 +55,7 @@ def test_rectangle_initialization():
 
 PyTests guarantee reliability in generating diagrams and executing user commands, contributing to a polished and bug-free product.
 
-**Collaboration and Contributions**
+## Collaboration and Contributions
 All team members equally participated in designing, implementing, and testing the three core components:
 Library Development: Jointly structured the inheritance model and implemented individual shape classes.
 Wrapper Design: Collaboratively defined the JSON schema to ensure compatibility with natural language queries.
