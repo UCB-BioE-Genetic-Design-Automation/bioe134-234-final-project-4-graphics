@@ -9,14 +9,14 @@ This document outlines the structure, functionality, and collaborative developme
 - Shape Classes: Specialized subclasses like TextBox, Rectangle, Arrow, and Ellipse allow users to create complex diagrams by combining simple elements.
 - Advanced Functionalities: Includes composite elements like TextInOval and LabeledArrow for embedding text inside shapes or along directional arrows.
 - Customizable Attributes: Color, coordinates, size, and other visual properties can be customized for precise diagrammatic representation.
-- 
-- **Example**
-- python
-- Copy code
-- rectangle = Rectangle(width=100, height=50, coordinates=(10, 10), color=(255, 0, 0))
-- rectangle.draw(draw_obj)
-- 
-- These methods are critical for transforming abstract design specifications into tangible graphical outputs.
+
+**Example**
+python
+Copy code
+rectangle = Rectangle(width=100, height=50, coordinates=(10, 10), color=(255, 0, 0))
+rectangle.draw(draw_obj)
+
+These methods are critical for transforming abstract design specifications into tangible graphical outputs.
 
 ## 2. C9 Wrappers
 The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integration with language models like GPT for automated diagram generation. This design facilitates high-level querying and instruction sets to programmatically interact with the library.
