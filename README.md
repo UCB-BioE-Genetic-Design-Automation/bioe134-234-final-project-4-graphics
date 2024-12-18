@@ -16,11 +16,7 @@ This program is implemented in **Python**.
 
 ## Scope of Work
 
-As part of the final project for BioE 134, I was responsible for the following parts of creating a program that can output biological graphics images:
-
-1. **Methods for Drawing and Storing Graphics Objects**: I worked with one of my group members, Hari, to create class-bound methods to initiate and draw shapes on a canvas. The main class is called "Canvas", where all the shapes are stored and drawn in specific orderings.
-   
-2. **C9 Wrappers**: I was responsible for creating and refining the C9 Wrappers for all the existing methods in the project.
+All three of us (Hari, James, Joseph) worked on all parts of this project.
 
 ---
 
