@@ -10,7 +10,8 @@ This document outlines the structure, functionality, and collaborative developme
 - Advanced Functionalities: Includes composite elements like TextInOval and LabeledArrow for embedding text inside shapes or along directional arrows.
 - Customizable Attributes: Color, coordinates, size, and other visual properties can be customized for precise diagrammatic representation.
 
-**Example**
+**Example:**
+
 python
 
 Copy code
@@ -23,13 +24,17 @@ These methods are critical for transforming abstract design specifications into 
 
 ## 2. C9 Wrappers
 The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integration with language models like GPT for automated diagram generation. This design facilitates high-level querying and instruction sets to programmatically interact with the library.
-Key Features
-Wrapper Functions: Abstract away the complexities of direct method calls, enabling intuitive usage via simple JSON commands.
-Schema Definition: Each function (e.g., Rectangle.draw) is represented with its parameters, inputs, and outputs in the JSON schema.
-Interoperability: Connects diagramming logic with the LLM's natural language processing capabilities for seamless user interaction.
-Example JSON Command
+**Key Features**
+
+- Wrapper Functions: Abstract away the complexities of direct method calls, enabling intuitive usage via simple JSON commands.
+- Schema Definition: Each function (e.g., Rectangle.draw) is represented with its parameters, inputs, and outputs in the JSON schema.
+- Interoperability: Connects diagramming logic with the LLM's natural language processing capabilities for seamless user interaction.
+**Example JSON Command**
+  
 json
+
 Copy code
+
 {
   "id": "org.c9.function.Rectangle.__init__",
   "name": "Rectangle.__init__",
