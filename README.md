@@ -12,8 +12,11 @@ This document outlines the structure, functionality, and collaborative developme
 
 **Example**
 python
+
 Copy code
+
 rectangle = Rectangle(width=100, height=50, coordinates=(10, 10), color=(255, 0, 0))
+
 rectangle.draw(draw_obj)
 
 These methods are critical for transforming abstract design specifications into tangible graphical outputs.
