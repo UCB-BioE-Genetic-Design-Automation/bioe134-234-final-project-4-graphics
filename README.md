@@ -30,7 +30,7 @@ The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integrat
 - Schema Definition: Each function (e.g., Rectangle.draw) is represented with its parameters, inputs, and outputs in the JSON schema.
 - Interoperability: Connects diagramming logic with the LLM's natural language processing capabilities for seamless user interaction.
 
-**Example JSON Command**
+**Example JSON Command:**
   
 json
 
