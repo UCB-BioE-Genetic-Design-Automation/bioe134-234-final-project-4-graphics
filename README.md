@@ -3,19 +3,20 @@
 This document outlines the structure, functionality, and collaborative development process for the C9 Graphics Project, which is designed to generate and manipulate diagrams programmatically. The project consists of three key components: Library of Methods, C9 Wrappers, and PyTests, all implemented in Python. Each team member has contributed equally to their development and integration.
 
 ## 1. Library of Methods
-The library provides a set of reusable, class-bound functions for generating and manipulating graphical elements such as rectangles, textboxes, arrows, polygons, and ellipses. These classes and methods simplify diagram creation through intuitive, parameterized functions.
-Key Features
-Inheritance Structure: Built around a superclass (Element) to promote modularity and maintainability.
-Shape Classes: Specialized subclasses like TextBox, Rectangle, Arrow, and Ellipse allow users to create complex diagrams by combining simple elements.
-Advanced Functionalities: Includes composite elements like TextInOval and LabeledArrow for embedding text inside shapes or along directional arrows.
-Customizable Attributes: Color, coordinates, size, and other visual properties can be customized for precise diagrammatic representation.
-Example
-python
-Copy code
-rectangle = Rectangle(width=100, height=50, coordinates=(10, 10), color=(255, 0, 0))
-rectangle.draw(draw_obj)
-
-These methods are critical for transforming abstract design specifications into tangible graphical outputs.
+- The library provides a set of reusable, class-bound functions for generating and manipulating graphical elements such as rectangles, textboxes, arrows, polygons, and ellipses. These classes and methods simplify diagram creation through intuitive, parameterized functions.
+**Key Features**
+- Inheritance Structure: Built around a superclass (Element) to promote modularity and maintainability.
+- Shape Classes: Specialized subclasses like TextBox, Rectangle, Arrow, and Ellipse allow users to create complex diagrams by combining simple elements.
+- Advanced Functionalities: Includes composite elements like TextInOval and LabeledArrow for embedding text inside shapes or along directional arrows.
+- Customizable Attributes: Color, coordinates, size, and other visual properties can be customized for precise diagrammatic representation.
+- 
+- **Example**
+- python
+- Copy code
+- rectangle = Rectangle(width=100, height=50, coordinates=(10, 10), color=(255, 0, 0))
+- rectangle.draw(draw_obj)
+- 
+- These methods are critical for transforming abstract design specifications into tangible graphical outputs.
 
 ## 2. C9 Wrappers
 The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integration with language models like GPT for automated diagram generation. This design facilitates high-level querying and instruction sets to programmatically interact with the library.
