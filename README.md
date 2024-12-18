@@ -65,9 +65,9 @@ python
 Copy code
 
 def test_rectangle_initialization():<br>
-|    rect = Rectangle(width=100, height=50, coordinates=(0, 0), color=(255, 0, 0))<br>
-|    assert rect.width == 100<br>
-|    assert rect.color == (255, 0, 0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rect = Rectangle(width=100, height=50, coordinates=(0, 0), color=(255, 0, 0))<br>
+&nbsp;&nbsp;&nbsp;&nbsp; assert rect.width == 100<br>
+&nbsp;&nbsp;&nbsp;&nbsp;assert rect.color == (255, 0, 0)<br>
 
 PyTests guarantee reliability in generating diagrams and executing user commands, contributing to a polished and bug-free product.
 
