@@ -29,6 +29,7 @@ The C9 Wrappers encapsulate the methods in JSON-based schemas, allowing integrat
 - Wrapper Functions: Abstract away the complexities of direct method calls, enabling intuitive usage via simple JSON commands.
 - Schema Definition: Each function (e.g., Rectangle.draw) is represented with its parameters, inputs, and outputs in the JSON schema.
 - Interoperability: Connects diagramming logic with the LLM's natural language processing capabilities for seamless user interaction.
+
 **Example JSON Command**
   
 json
@@ -76,6 +77,7 @@ PyTests guarantee reliability in generating diagrams and executing user commands
 Library Development: Jointly structured the inheritance model and implemented individual shape classes.<br>
 Wrapper Design: Collaboratively defined the JSON schema to ensure compatibility with natural language queries.<br>
 Testing Framework: Developed and executed test cases, ensuring robust functionality and integration.<br>
+
 **Workflow:**
 Weekly code reviews and pair programming sessions facilitated collaboration.<br>
 Collective brainstorming sessions shaped the design principles for each component.<br>
