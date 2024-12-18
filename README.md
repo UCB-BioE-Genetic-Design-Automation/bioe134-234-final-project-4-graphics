@@ -35,15 +35,15 @@ json
 
 Copy code
 
-  {<br>
-    "id": "org.c9.function.Rectangle.__init__",<br>
-    "name": "Rectangle.__init__",<br>
-    "inputs": {<br>
-      "width": 100,<br>
-      "height": 50,<br>
-      "color": [255, 0, 0],<br>
-      "coordinates": [10, 10]<br>
-    }<br>
+{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"id": "org.c9.function.Rectangle.__init__",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"name": "Rectangle.__init__",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"inputs": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"width": 100,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"height": 50,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"color": [255, 0, 0],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"coordinates": [10, 10]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
   }<br>
 
 These wrappers ensure that non-technical users can generate diagrams by interacting with the model through natural language.
